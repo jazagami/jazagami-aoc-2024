@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",
+    "target": "es2023",
+    "module": "nodenext",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@jazagami-aoc-2024/day-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node --experimental-strip-types main.ts",
+    "test": "npx jest --config=../../jest.config.js --runTestsByPath ./test.ts"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC"
+}

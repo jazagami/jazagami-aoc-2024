@@ -1,0 +1,20 @@
+{
+  "name": "@jazagami-aoc-2024/advent-of-code-2024",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "7.26.0",
+    "@types/jest": "29.5.14",
+    "@types/node": "22.10.1",
+    "jest": "29.7.0",
+    "ts-jest": "29.2.5"
+  }
+}
