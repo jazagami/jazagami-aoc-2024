@@ -3,7 +3,7 @@ const testData = [
 ];
 
 describe('day {x}', () => {
-  describe('part 2', () => {
+  describe('part 1', () => {
     it('should match testData', () => {
       expect(part1Solution(testData)).toBe(0);
     });
