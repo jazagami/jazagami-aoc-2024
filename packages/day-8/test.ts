@@ -1,0 +1,33 @@
+import { part1Solution, part2Solution } from './main.ts';
+const testData =
+`............
+........0...
+.....0......
+.......0....
+....0.......
+......A.....
+............
+............
+........A...
+.........A..
+............
+............`;
+
+describe('day 8', () => {
+  describe('part 1', () => {
+    it('should match testData', () => {
+      expect(part1Solution(testData)).toBe(14);
+    });
+    it('should match the solution', () => {
+      expect(part1Solution()).toBe(423);
+    });
+  });
+  describe('part 2', () => {
+    it('should match test data', () => {
+      expect(part2Solution(testData)).toBe(34);
+    });
+    it('should match the solution', () => {
+      expect(part2Solution()).toBe(0);
+    });
+  });
+});
