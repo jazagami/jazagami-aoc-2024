@@ -3,7 +3,7 @@ import * as fs from 'fs';
 export const getDataLines = (filePath: string) => {
   const fileContentBuffer: Buffer = fs.readFileSync(filePath);
   const fileContent:string = fileContentBuffer.toString();
-  return fileContent.split(/[\n]/);
+  return fileContent.split(/[\r\n]+/);
 }
 
 export const getDataColumns = (filePath: string) => {
