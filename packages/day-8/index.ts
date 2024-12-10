@@ -68,14 +68,14 @@ export const getAllAntinodes = (coordinateSets: Coordinates[], dimensions: Coord
       }
       const [xb, yb] = coordinateSets[j];
       const [velocityX, velocityY] = [xb - xa, yb - ya];
-      let scalar = 1;
+      let scalar = 0;
       let inBounds = true;
       while (inBounds) {
         inBounds = false;
         const scaledVelocityX = velocityX * scalar;
         const scaledVelocityY = velocityY * scalar;
         const increasingPoint: Coordinates = [xb + scaledVelocityX, yb + scaledVelocityY];
-        const decreasingPoint: Coordinates = [xb - scaledVelocityX, yb - scaledVelocityY];
+        const decreasingPoint: Coordinates = [xa - scaledVelocityX, ya - scaledVelocityY];
 
         if (isNodeInBounds(increasingPoint, dimensions)) {
           inBounds = true;

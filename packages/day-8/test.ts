@@ -27,7 +27,7 @@ describe('day 8', () => {
       expect(part2Solution(testData)).toBe(34);
     });
     it('should match the solution', () => {
-      expect(part2Solution()).toBe(0);
+      expect(part2Solution()).toBe(1287);
     });
   });
 });
